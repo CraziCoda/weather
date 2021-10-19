@@ -6,7 +6,7 @@ const bodyParser= require("body-parser");
 const route = require('./routes/route.js');
 const app = express();
 
-const PORT = 1400 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'views')));
